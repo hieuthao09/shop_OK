@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1vh;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+.Menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    list-style: none;
+
+}
+.Menu ul img{
+    width: 6vw; 
+    height:50px;
+}
+.Menu ul ul {
+    top: 81px;
+
+}
+
+.Menu li a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+}
+
+.Menu ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    text-transform: uppercase;
+}
+
+.Menu ul ul li {
+    background: transparent;
+    text-align: center;
+    width: 15vw;
+    height: 50px;
+    background-color: lightgrey;
+}
+
+.Menu ul li a:hover {
+    color: aliceblue;
+}
+
+.Menu ul ul li:hover {
+    background-color: gray;
+}
+
+.Menu ul:hover {
+    background-color: lightgrey;
+}
+
+.Menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.Menu ul li:hover>ul {
+    visibility: visible;
+}
+
+.Menu ul ul #t1 {
+    width: 25vw;
+}
+
+.Menu ul #t2:hover {
+    background-color: white;
+}
+
+.input-group-text {
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 400rem;
+    background-color: grey;
+}
+
+.Menu ul #t3:hover {
+    background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .Menu {
+        max-width: 768px;
+        display: inline-table;
+    }
+    .Menu ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .Menu ul ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px 0;
+    }
+    .Menu ul li {
+        width: 100%;
+        height: 80px;
+    }
+    .Menu ul ul li {
+        background: transparent;
+        text-align: center;
+        width: 100%;
+        background-color: lightgrey;
+    }
+    .Menu ul ul #t1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        top:25px;
+        z-index: 51;
+        background-color: lightgrey;
+    }
+    .Menu ul ul #t1:hover{
+        background-color: gray;
+    }
+    .Menu ul li:hover {
+        width: 100%;
+        color: aliceblue;
+    }
+
+    .Menu ul ul li:hover {
+        background-color: gray;
+    }
+
+    .Menu ul:hover {
+        background-color: lightgrey;
+    }
+
+    .Menu ul ul {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .Menu ul li:hover>ul {
+        visibility: visible;
+        bottom: 50px;
+    }
+    .Menu ul #t2
+    {
+        display: none;
+    }
+    .Menu ul #t3:hover {
+        background-color: black;
+    }
+    .Menu ul #t3 img {
+        width: 100px;
+    }
+}
